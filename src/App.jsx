@@ -13,8 +13,8 @@ export default function App() {
         <Profile myData = {{ 
           imgsrc: profileImage001,
           imgalt: 'プロフィール画像',
-          imgwidth: 800,
-          imgheight: 506,
+          imgwidth: 1200,
+          imgheight: 675,
           name: '芽笠 める', 
           birthday: '2001年10月14日', 
           hobbies: ['ゲーム','サウナ','プログラミング','映画','ポーカー','麻雀'],
