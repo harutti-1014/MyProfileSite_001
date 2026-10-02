@@ -4,6 +4,9 @@ Reactの学習を兼ねて制作している自己紹介サイトです。
 
 React公式ドキュメントの学習内容をもとに、段階的に機能を追加しています。
 
+Vercel URL
+https://my-profile-site-001.vercel.app
+
 ## 学習Step
 
 ### Step 1：コンポーネントの分割
