@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const pokerDetail = <p>ポーカーのランク帯：<br/>ポーカーチェイス： レジェンド<br/>メインでプレイ中<br/>Edge Poker： マスター<br/>サブでプレイ中<br/>m HOLD'EM：m3 King<br/>ちょこちょこ触る程度<br/>大会実績（上位入賞のみ）<br/>Edge Poker The 6th Pre-Classic： 6位 / 1001人中 （FT進出）<br/>Double Belly 豊橋  選べるプライズトーナメント（2026/06/16）：1位 / 20人中<br/>じゃんけんポーカー 岡崎店  Monster Friday（2026/08/14）：1位 / 30人中 </p>;
+const pokerDetail = <section><h3>ポーカーのランク帯：</h3><p>ポーカーチェイス： レジェンド<br/>メインでプレイ中<br/>Edge Poker： マスター<br/>サブでプレイ中<br/>m HOLD'EM：m3 King<br/>ちょこちょこ触る程度</p><h3>大会実績（上位入賞のみ）</h3><p>Edge Poker The 6th Pre-Classic： 6位 / 1001人中 （FT進出）<br/>Double Belly 豊橋  選べるプライズトーナメント（2026/06/16）：1位 / 20人中<br/>じゃんけんポーカー 岡崎店  Monster Friday（2026/08/14）：1位 / 30人中 </p></section>;
 
 export default function Poker() {
   const [showMore, setShowMore] = useState(false);
@@ -15,7 +15,7 @@ export default function Poker() {
            たまに差し返されて長考したりもします。<br/>
            将来の夢は小中規模の海外トナメ優勝です。</p>
         <button onClick={handleMoreClick}>
-          もっと見る
+          {showMore ? '詳細を閉じる' : 'もっと見る'}
         </button>
         {showMore && pokerDetail}
     </section>
