@@ -1,16 +1,51 @@
-# React + Vite
+# MyProfileSite_001
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Reactの学習を兼ねて制作している自己紹介サイトです。
 
-Currently, two official plugins are available:
+React公式ドキュメントの学習内容をもとに、段階的に機能を追加しています。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 学習Step
 
-## React Compiler
+### Step 1：コンポーネントの分割
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+プロフィール、ポーカー、好きなゲームなどの内容を、それぞれReactコンポーネントに分割する。
 
-## Expanding the ESLint configuration
+### Step 2：Propsによるデータ受け渡し
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+`App.jsx`から`Profile.jsx`へプロフィール情報をPropsとして渡し、受け取ったデータを表示する。
+
+### Step 3：配列とmapによるリスト表示
+
+好きなゲームを配列で管理し、`map()`を使ってゲーム一覧を`<li>`として表示する。
+
+### Step 4：useStateによる表示・非表示
+
+`useState`を使い、ポーカーの詳細情報をボタン操作で表示・非表示できるようにする。
+
+### Step 5：Stateによるボタン表示の変更
+
+Stateの値に応じて、表示するボタンの文字を切り替える。
+
+### Step 6：Stateによるポーカーランク選択
+
+複数のポーカーランクを用意し、ボタンを押すことで現在のランクをStateとして切り替えられるようにする。
+
+### Step 7：Stateを使ったゲーム切り替え
+
+ゲーム一覧と`useState`を使い、ボタン操作で表示するゲームを切り替えられるようにする。
+
+### Step 8：Stateの更新キュー
+
+1回のイベント内でState更新を複数回行い、Stateの更新キューとUpdater Functionの動作を確認する。
+
+## 使用技術
+
+* React
+* JavaScript
+* Vite
+* Git
+* GitHub
+
+## 学習目的
+
+Reactの基本的な仕組みを理解しながら、実際に自己紹介サイトを制作する。
