@@ -10,10 +10,10 @@ export default function Games() {
     const [gameIndex, setGameIndex] = useState(0);
 
     function handleNextClick(){
-      setGameIndex((gameIndex + 1) % game_list.length)
+      setGameIndex(n => (n + 1) % game_list.length)
     }
     function handlePrevClick(){
-      setGameIndex((gameIndex - 1 + game_list.length) % game_list.length)
+      setGameIndex(n => (n - 1 + game_list.length) % game_list.length)
     }
     let game = game_list[gameIndex];
   return (
