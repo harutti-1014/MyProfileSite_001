@@ -28,10 +28,10 @@ export default function Poker() {
             <option value="MHoldem">m HOLD'EM</option>
           </select>
         </label>
-        
-        {pokerRank == "PokerChase" && <p>ポーカーチェイス： レジェンド<br/>メインでプレイ中</p>}
-        {pokerRank == "EdgePoker" && <p>Edge Poker： マスター<br/>サブでプレイ中</p>}
-        {pokerRank == "MHoldem" && <p> m HOLD'EM：m3 King<br/>ちょこちょこ触る程度</p>}
+
+        {pokerRank === "PokerChase" && <p>ポーカーチェイス： レジェンド<br/>メインでプレイ中</p>}
+        {pokerRank === "EdgePoker" && <p>Edge Poker： マスター<br/>サブでプレイ中</p>}
+        {pokerRank === "MHoldem" && <p> m HOLD'EM：m3 King<br/>ちょこちょこ触る程度</p>}
           
           <h3>大会実績（上位入賞のみ）</h3>
           <p>Edge Poker The 6th Pre-Classic： 6位 / 1001人中 （FT進出）<br/>
