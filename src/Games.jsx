@@ -205,6 +205,12 @@ export default function Games() {
         <button onClick={handleNextClick}>
           次へ
         </button>
+        <button onClick={() => {
+        setGameIndex(n => (n + 1) % game_list.length);
+        setGameIndex(n => (n + 1) % game_list.length);
+        setGameIndex(n => (n + 1) % game_list.length);
+        }}> ３つ先へ
+        </button>
 
     </section>
   );
