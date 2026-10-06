@@ -39,9 +39,7 @@ export default function Games() {
           次へ
         </button>
         <button onClick={() => {
-        setGameIndex(n => (n + 1) % game_list.length);
-        setGameIndex(n => (n + 1) % game_list.length);
-        setGameIndex(n => (n + 1) % game_list.length);
+        setGameIndex(n => (n + 3) % game_list.length);
         }}> ３つ先へ
         </button>
 
