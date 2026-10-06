@@ -4,6 +4,7 @@ import Games from './Games';
 import Favorites from './Favorites';
 import Skills from './Skills';
 import profileImage001 from './assets/profile_001.png';
+import './index.css'
 
 export default function App() {
   return (

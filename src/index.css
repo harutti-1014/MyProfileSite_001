@@ -1,0 +1,156 @@
+/* index.css */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Noto Sans JP",
+    sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ページ全体 */
+#root {
+  width: 100%;
+}
+
+#root > div {
+  width: min(100% - 40px, 1000px);
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+
+/* タイトル */
+h1 {
+  margin: 0 0 40px;
+  padding: 30px;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #fff;
+  background: #34495e;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+/* 各セクション */
+#root section > section {
+  margin-bottom: 30px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 8%);
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #34495e;
+  color: #34495e;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #444;
+}
+
+/* プロフィール画像 */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 24px;
+  border-radius: 12px;
+}
+
+/* プロフィール */
+p {
+  margin: 10px 0;
+}
+
+/* リスト */
+ul {
+  padding-left: 25px;
+}
+
+li {
+  margin: 6px 0;
+}
+
+/* ボタン */
+button {
+  margin: 10px 6px 0 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #34495e;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+}
+
+button:hover {
+  background: #2c3e50;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* セレクトボックス */
+select {
+  margin-left: 8px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1rem;
+}
+
+/* セレクトボックス・フォーカス時 */
+select:focus {
+  outline: 2px solid #8aa4bd;
+  outline-offset: 2px;
+}
+
+/* ゲーム画像など、大きすぎる画像を制限 */
+section img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* スマートフォン対応 */
+@media (max-width: 600px) {
+  #root > div {
+    width: min(100% - 20px, 1000px);
+    padding-top: 20px;
+  }
+
+  h1 {
+    padding: 20px 15px;
+    font-size: 1.7rem;
+  }
+
+  #root section > section {
+    padding: 20px;
+  }
+
+  button {
+    padding: 9px 15px;
+  }
+}
