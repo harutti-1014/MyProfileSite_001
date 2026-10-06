@@ -187,7 +187,7 @@ export default function Games() {
     <section>
         <h2>好きなゲーム</h2>
         <h3>{game.name}</h3>
-        <img src={images[game.src]} style={{ width: '400px', height: 'auto' }} alt={game.alt}/>
+        <img src={images[game.src]} style={{ width: 'auto', height: 'auto' }} alt={game.alt}/>
         <p>ジャンル： {game.genre}</p>
         <p>プレイ時間： {game.playTime}</p>
         <p>

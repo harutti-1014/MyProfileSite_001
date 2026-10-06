@@ -1,7 +1,8 @@
 export default function Favorites() {
   return (
     <section>
-        <p>好きなアニメ、映画、ドラマ<br/><br/>
+        <h2>好きなアニメ、映画、ドラマ</h2>
+        <p>
           【アニメ】<br/>
           ・カイジ、アカギなど福本作品<br/>
           ・ヨルムンガンド<br/>
