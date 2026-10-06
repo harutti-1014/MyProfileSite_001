@@ -137,6 +137,11 @@ section img {
   object-fit: contain;
 }
 
+/* 改行用 */
+.game-detail {
+  white-space: pre-line;
+}
+
 /* スマートフォン対応 */
 @media (max-width: 600px) {
   #root > div {

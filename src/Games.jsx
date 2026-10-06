@@ -23,14 +23,7 @@ export default function Games() {
         <img src={images[game.src]} style={{ width: 'auto', height: 'auto' }} alt={game.alt}/>
         <p>ジャンル： {game.genre}</p>
         <p>プレイ時間： {game.playTime}</p>
-        <p>
-          {game.detail.split('|').map((line, index) => (
-            <Fragment key={index}>
-              {line}
-              <br />
-            </Fragment>
-          ))}
-        </p>
+        <p className="game-detail">{game.detail}</p>
         <p>{gameIndex+1} / {game_list.length}</p>
         <button onClick={handlePrevClick}>
           戻る
