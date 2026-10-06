@@ -31,7 +31,7 @@ export default function Games() {
             </Fragment>
           ))}
         </p>
-        <p>{gameIndex+1} / 17</p>
+        <p>{gameIndex+1} / {game_list.length}</p>
         <button onClick={handlePrevClick}>
           戻る
         </button>
