@@ -1,5 +1,6 @@
 /* index.css */
 
+/* 全体の基本設定 */
 * {
   box-sizing: border-box;
 }
@@ -32,7 +33,7 @@ body {
   padding: 40px 0 80px;
 }
 
-/* タイトル */
+/* ページタイトル */
 h1 {
   margin: 0 0 40px;
   padding: 30px;
@@ -66,7 +67,7 @@ h3 {
   color: #444;
 }
 
-/* プロフィール画像 */
+/* 画像の共通設定 */
 img {
   display: block;
   max-width: 100%;
@@ -78,7 +79,13 @@ img {
   padding: 0;
 }
 
-/* プロフィール */
+/* セクション内の画像 */
+section img {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* 段落 */
 p {
   margin: 10px 0;
 }
@@ -125,19 +132,12 @@ select {
   font-size: 1rem;
 }
 
-/* セレクトボックス・フォーカス時 */
 select:focus {
   outline: 2px solid #8aa4bd;
   outline-offset: 2px;
 }
 
-/* ゲーム画像など、大きすぎる画像を制限 */
-section img {
-  max-height: 500px;
-  object-fit: contain;
-}
-
-/* 改行用 */
+/* ゲーム詳細の改行 */
 .game-detail {
   white-space: pre-line;
 }
